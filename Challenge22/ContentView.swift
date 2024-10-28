@@ -9,13 +9,37 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            VStack {
+                // Icon
+                Image(systemName: "fork.knife.circle")
+                    .resizable()
+                    .frame(width: 325, height: 327)
+                    .foregroundColor(.cccc)
+                    .padding(.bottom, 30)
+                
+                // Main message
+                Text("There's no recipe yet")
+                    .font(.system(size: 24))
+                    .fontWeight(.bold)
+                    .frame(width: 330, height: 40)
+                    .padding(.bottom, 10)
+                
+                // Instructional subtext
+                Text("Please add your recipes")
+                    .font(.system(size: 18))
+                    .frame(width: 238, height: 26)
+                    .foregroundColor(.gray)
+            }
+            .navigationTitle("Food Recipes")
+            .navigationBarItems(trailing:
+                // Wrap the button inside a NavigationLink to navigate to AddRecipeView
+                NavigationLink(destination: AddRecipeView()) {
+                    Image(systemName: "plus")
+                    .foregroundColor(.cccc)
+                }
+            )
         }
-        .padding()
     }
 }
 
