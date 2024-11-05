@@ -24,11 +24,9 @@ This project is designed with SwiftUI and supports both iOS and macOS platforms 
 To start with this project:
 
 1) Clone it using:
-
 ```bash
 git clone https://github.com/your-username/recipe-saver.git
 cd recipe-saver
-
-
-2)
-3)
+```
+2) Open the project in Xcode: Double-click the file to open in Xcode.
+3) Build and run the project on a simulator or physical device with iOS 15 or later.
