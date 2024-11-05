@@ -19,10 +19,16 @@ This project is designed with SwiftUI and supports both iOS and macOS platforms 
 
 ## Getting Started
 
-### Clone the Repository
+### Clone the Repository - Installation
 
-To start with this project, clone it using:
+To start with this project:
+
+1) Clone it using:
 
 ```bash
 git clone https://github.com/your-username/recipe-saver.git
 cd recipe-saver
+
+
+2)
+3)
